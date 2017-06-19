@@ -19,14 +19,14 @@ var hashHistory = router.hashHistory;
 var IndexRoute = router.IndexRoute;
 
 //Reference the high level components
-var Login = require("../Login");
-var SignUp = require("../SignUp");
-var SignUpPossible = require("..SignUpPossible");
-var Borrow = require("../Borrow");
-var AddTool = require("../AddTool");
-var MyTools = require("../MyTools");
-var BorrowModal = require("../BorrowerModal");
-var AddToolModal = require("../AddToolModal");
+var Login = require("../src/Login");
+var SignUp = require("../src/SignUp");
+var SignUpPossible = require("../src/SignUpPossible");
+var Borrow = require("../src/Borrow");
+var AddTool = require("../src/AddTool");
+var MyTools = require("../src/MyTools");
+var BorrowModal = require("../src/BorrowerModal");
+var AddToolModal = require("../src/AddToolModal");
 
 module.exports = (
 
