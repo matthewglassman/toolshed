@@ -1,0 +1,36 @@
+{
+  "name": "toolshed",
+  "proxy": "http://localhost:8080",
+  "version": "0.0.1",
+  "description": "Tool Sharing Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewglassman/toolshed.git"
+  },
+  "author": "Industrious Dolphins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthewglassman/toolshed/issues"
+  },
+  "homepage": "https://github.com/matthewglassman/toolshed#readme",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.1",
+    "connect-flash": "^0.1.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "express-validator": "^3.2.0",
+    "jquery": "^3.2.1",
+    "mongojs": "^2.4.0",
+    "mongoose": "^4.9.6",
+    "morgan": "^1.8.1",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
