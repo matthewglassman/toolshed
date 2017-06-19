@@ -2,20 +2,28 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import axios from "axios";
+
+import Greeting from './Greeting';
+
+// import '../node_modules/elemental/less/elemental.less'
+// import { Button, Alert, Spinner } from 'elemental' 
+
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+
+	render() {
+		return <Greeting />
+			
+		// const isLoggedIn = this.props.isLoggedIn;
+		// console.log(isLoggedIn)
+    // 	if (this.props.isLoggedIn) {
+    // 		return <MyTools />;
+  		// return this.props.children
+
+
+  		// <div> <Button onClick={this.toggleModal}>Launch Modal</Button>
+  		// <Greeting /></div>
+  	}
 }
 
 export default App;

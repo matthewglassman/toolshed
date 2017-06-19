@@ -1,0 +1,154 @@
+body, html {
+	background: url("../public/background2.jpg") no-repeat;
+	background-size: cover;	
+	background-position:center;
+	background-attachment: fixed;
+	height:100%;
+	text-align:center;
+	color: #333;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Error message when signing in*/
+.displayNone {
+	display:none;
+}
+
+/*Background on My Tools/Add/Borrow/Return Tool*/
+.overlay {
+	 /*background: rgba(0, 2, 2, .8);*/
+	 background: white;
+	 height:auto;
+}
+
+.Mission {
+	position:absolute;
+	top:50%;
+	left:50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Sign in/up modal, Add a Tool page*/
+label {
+	font-size: 15px;
+	font-weight: 400;
+	margin-top: 8px;
+	width:100%;
+	text-align: left !important;
+}
+
+/*Add Tool Form*/
+#half {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Borrow Tool Modal*/
+.left {
+	text-align: left;
+}
+
+.list-group-item {
+	border: none;
+	font-size: 16px;
+}
+
+/*Text*/
+.white {
+	color: white;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+}
+
+h1 {
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 100px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+}
+
+/*incorrect sign-in error*/
+p.small {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+}
+
+a {
+	color: #5C6A7C;
+}
+
+/*Navbar*/
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/*Logo*/
+span {
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+}
+
+/*Navbar Texts*/
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-nav>li>a:active:focus {
+    border-bottom: solid #fff;
+	color:white;
+}
+
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover {
+	color:#CFCECE;
+}
+
+/*Lower Navbar Items*/
+.navbar-brand { /*ToolShare*/
+	line-height: inherit;
+}
+
+.navbar-nav {
+	margin: 5px;
+}
+
+/*Buttons*/
+.btn-primary {
+	background-color: #435265;
+	border-color: #435265;
+}
+
+.btn-primary:active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active:focus {
+	background-color: #5C6A7C;
+	border-color: #5C6A7C;
+}
+
+/*Images*/
+img {
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 100%;
+}
+
+.img-container {
+    height: 200px;
+    overflow: hidden;
+}
