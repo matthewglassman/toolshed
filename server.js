@@ -38,7 +38,9 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 
 // MongoDB Configuration configuration
-mongoose.connect("mongodb://localhost/toolshare");
+var databaseUrl = process.env.MONGODB_URI || "mongodb://localhost/toolshare";
+
+mongoose.connect(databaseUrl);
 var db = mongoose.connection;
 
 db.on("error", function(err) {
