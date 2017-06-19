@@ -1,14 +1,14 @@
 
 // Require User Schema
-var User  = require ( './models/User');
-var Group  = require ( './models/Group');
+var User  = require ( './client/models/User');
+var Group  = require ( './client/models/Group');
 
 //Require Tool Schema
-var Tool  = require ( './models/Tool');
-var passport = require ( "./src/config/passport.js");
+var Tool  = require ( './client/models/Tool');
+var passport = require ( "./client/src/config/passport.js");
 
 // Requiring our custom middleware for checking if a user is logged in
-var isAuthenticated = require("./src/config/isAuthenticated");
+var isAuthenticated = require("./client/src/config/isAuthenticated");
 
 module.exports = function (app) {
 
