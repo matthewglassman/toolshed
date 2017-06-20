@@ -13,9 +13,9 @@ var isAuthenticated = require("./client/config/isAuthenticated");
 module.exports = function (app) {
 
   // Main "/" Route. This will redirect the user to our rendered React application
-  app.get('/', function(req, res) {
-    res.sendFile(__dirname + "/public/index.html");
-  });
+  // app.get('/', function(req, res) {
+  //   res.sendFile(__dirname + "/public/index.html");
+  // });
 
   // ---------- Home Page ----------
   // SIGNING IN
@@ -299,7 +299,7 @@ module.exports = function (app) {
       }      
     });    
   });
-  // app.get('*', function(req, res) {
-  //   res.sendFile(path.join(__dirname, './client/public/index.html'));
-  // });
+  app.get('*', function(req, res) {
+    res.sendFile(path.join(__dirname, './client/public/index.html'));
+  });
 }
