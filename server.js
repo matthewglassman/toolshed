@@ -27,10 +27,10 @@ var PORT = process.env.PORT || 8080;
 // var PORT = 8080;
 
 // ensure that public folder is the default for files
-// app.use(express.static("./public"));
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-}
+app.use(express.static("./public"));
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('client/build'))
+// }
 
 // Run Morgan for Logging middleware
 app.use(logger("dev"));

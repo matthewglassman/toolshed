@@ -5,17 +5,17 @@ var Group  = require ( './client/models/Group');
 
 //Require Tool Schema
 var Tool  = require ( './client/models/Tool');
-var passport = require ( "./client/src/config/passport.js");
+var passport = require ( "./client/config/passport.js");
 
 // Requiring our custom middleware for checking if a user is logged in
-var isAuthenticated = require("./client/src/config/isAuthenticated");
+var isAuthenticated = require("./client/config/isAuthenticated");
 
 module.exports = function (app) {
 
   // Main "/" Route. This will redirect the user to our rendered React application
-  // app.get('/', function(req, res) {
-  //   res.sendFile(__dirname + "/public/index.html");
-  // });
+  app.get('/', function(req, res) {
+    res.sendFile(__dirname + "/public/index.html");
+  });
 
   // ---------- Home Page ----------
   // SIGNING IN
@@ -299,7 +299,7 @@ module.exports = function (app) {
       }      
     });    
   });
-  app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, './client/public/index.html'));
-  });
+  // app.get('*', function(req, res) {
+  //   res.sendFile(path.join(__dirname, './client/public/index.html'));
+  // });
 }
