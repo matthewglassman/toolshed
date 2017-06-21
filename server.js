@@ -14,11 +14,11 @@ var flash = require ('connect-flash');
 var expressValidator = require ('express-validator');
 
 // Require User Schema
-var User = require ('/client/models/User.js');
-var Group = require ('/client/models/Group.js');
+var User = require ('client/models/User.js');
+var Group = require ('client/models/Group.js');
 
 //Require Tool Schema
-var Tool = require ('/client/models/Tool.js');
+var Tool = require ('client/models/Tool.js');
 
 // Create Instance of Express
 var app = express();
