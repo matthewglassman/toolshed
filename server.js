@@ -23,7 +23,7 @@ var Tool = require ('client/models/Tool.js');
 // Create Instance of Express
 var app = express();
 // Sets an initial port. We'll use this later in our listener
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3001;
 // var PORT = 8080;
 
 // ensure that public folder is the default for files
