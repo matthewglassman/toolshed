@@ -15,7 +15,7 @@ var expressValidator = require ('express-validator');
 
 // Require User Schema
 var User = require ('./client/models/User.js');
-var Group = require ('./client/models/Group.js');
+var Group = require ('./client/models/group.js');
 
 //Require Tool Schema
 var Tool = require ('./client/models/Tool.js');
